@@ -29,5 +29,5 @@ END_TIME=$(date +%s)
 TOTAL_TIME=$(($END_TIME - $START_TIME))
 echo "Time taken to execute the script is $TOTAL_TIME seconds"
 echo "pid of the process: $$"
-echo "Printing all variables passed to the script using $@: $@"
+echo "Printing all variables passed to the script using @: $@"
 echo "pid of the last command: $!"
