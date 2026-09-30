@@ -1,4 +1,7 @@
 #!/bin/bash
+# Running command inside the script and taking it to ouput. Please refer it's usage in line 29.
+START_TIME=$(date +%s)
+
 # command line arguments
 PERSON1=$1
 PERSON2=$2
@@ -16,3 +19,12 @@ echo "$PERSON2 :: thanks my dear $PERSON1"
 echo "Wasim is learning $COURSE"
 # environment variables in .bashrc export VAR_NAME=value will remain after the relogin and also takes preceding
 echo "Wasim is learning currently $COURSE"
+
+#Usage of date and time which will be useful in scripting
+DATE=$(date)
+echo "Today date is $DATE"
+
+sleep 10
+END_TIME=$(date +%s)
+TOTAL_TIME=$(($END_TIME - $START_TIME))
+echo "Time taken to execute the script is $TOTAL_TIME"
