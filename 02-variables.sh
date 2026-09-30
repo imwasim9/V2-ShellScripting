@@ -11,3 +11,8 @@ echo "$PERSON2 :: Dear $PERSON1, please get me the"
 read -s TOYNAME
 echo "$PERSON1 :: okay $PERSON2, I will get you $TOYNAME"
 echo "$PERSON2 :: thanks my dear $PERSON1"
+
+# environment variables use export VAR_NAME=value
+echo "Wasim is learning $COURSE"
+# environment variables in .bashrc export VAR_NAME=value will remain after the relogin and also takes preceding
+echo "Wasim is learning currently $COURSE"
