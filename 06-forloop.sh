@@ -1,9 +1,11 @@
 #!/bin/bash
 
-for i in {1..20}
-do
-    echo $i
-done
+# sudo sh 06-loops.sh mysql nginx python3
+
+# for i in {1..20}
+# do
+#     echo $i
+# done
 
 # color codes
 R="\e[31m"
