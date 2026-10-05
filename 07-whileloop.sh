@@ -21,7 +21,7 @@ if [ ! -d $SOURCE_DIR ]; then
 fi
 # f --> file type and mtime +10 --> older than 10 days
 # using touch -d 20260920 file.txt --> -d tells on which date the file should be created
-FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f mtime +10)
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f -mtime +10)
 
 while IFS= read -r filepath
 do 
